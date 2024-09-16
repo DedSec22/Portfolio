@@ -16,7 +16,7 @@ const Navbar = ({ navigations }) => {
                             <img src={logo} alt="YourLogo" className="logo-image" />
                         </Link>
                     </div>
-                    <ul className="navbar-nav roboto-thin">
+                    <ul className="navbar-nav">
                         {navigations.map((navigation, index) => (
                             <li
                                 key={index}

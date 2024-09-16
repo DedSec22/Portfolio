@@ -1,7 +1,10 @@
 header{
-    position: sticky;
+    position: fixed;
     top: 0;
-    background-color: white;
+    width: 100%;
+    background-color: transparent;
+    background-color: rgba(255, 255, 255);
+    transition: all 0.3s ease-in;
 
     .container{
 
@@ -11,17 +14,27 @@ header{
             justify-content: space-between;
             flex-wrap: nowrap;
             padding: 10px 20px;
-    
+            transition: all 0.3s ease-in;
+
             .logo{
                 display: block;
                 max-width: 60px;
                 width: 100%;
                 height: 100%;
-            
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
+                transition: all 0.3s ease-in;
+
+                .navbar-brand{
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
                 }
             }
             .navbar-nav{
@@ -29,11 +42,15 @@ header{
                 flex-direction: row;
                 gap: 22px;
                 width: fit-content;
+                transition: all 0.3s ease-in;
     
                 .nav-item{
 
                     .nav-link{
+                        font-size: 20px;
                         color: #03346E;
+                        text-transform: uppercase;
+                        transition: all 0.3s ease-in;
 
                         &:hover{
                             color: #6EACDA;
@@ -45,10 +62,31 @@ header{
     }
 }
 
-.scrolled {
-    background-color: #f00; /* Red background when scrolled */
-}
-  
-.not-scrolled {
-    background-color: #00f; /* Blue background when not scrolled */
+.scrolled .header-navbar{
+    box-shadow: 0px 0px 5px 1px #0ff;
+    transition: all 0.3s ease-in;
+
+    .container{
+
+        .navbar{
+            padding: 0px 20px;
+            transition: all 0.3s ease-in;
+
+            .logo{
+                max-width: 40px;
+                transition: all 0.3s ease-in;
+            }
+            .navbar-nav{
+                gap: 18px;
+                transition: all 0.3s ease-in;
+
+                .nav-item{
+
+                    .nav-link{
+                        transition: all 0.3s ease-in;
+                    }
+                }
+            }
+        }
+    }
 }

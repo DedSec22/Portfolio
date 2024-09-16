@@ -30,9 +30,8 @@ function ScrollClass() {
   }, [isScrolled]); // Run this effect whenever `isScrolled` changes
 
   return (
-    <div>
-      {/* This div can be used for other purposes, but it won't affect body styling */}
-    </div>
+    <>
+    </>
   );
 }
 

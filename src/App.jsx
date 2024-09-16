@@ -11,26 +11,30 @@ import PortfolioPage from './Components/Pages/PortfolioPage';
 import ContactPage from './Components/Pages/ContactPage';
 
 const navigations = [
-    { text: 'About', path: '/about' },
-    { text: 'Services', path: '/services' },
-    { text: 'Portfolio', path: '/portfolio' },
-    { text: 'Contact', path: '/contact' },
+  { text: 'About', path: '/about' },
+  { text: 'Services', path: '/services' },
+  { text: 'Portfolio', path: '/portfolio' },
+  { text: 'Contact', path: '/contact' },
 ];
 
 function App() {
   return (
     <>
       <ScrollClass />
-        <Router>
-            <Navbar navigations={navigations} />
-            <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/about" element={<AboutPage />} />
-                <Route path="/services" element={<ServicesPage />} />
-                <Route path="/portfolio" element={<PortfolioPage />} />
-                <Route path="/contact" element={<ContactPage />} />
-            </Routes>
-        </Router>
+      <Router>
+        <Navbar navigations={navigations} />
+
+        <div className="main-content">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </div>
+
+      </Router>
     </>
   )
 }
