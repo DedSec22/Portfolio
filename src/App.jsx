@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+import ScrollClass from './Components/ScrollClass.jsx';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import Navbar from './Components/Navbar';
+
 import HomePage from './Components/Pages/HomePage';
 import AboutPage from './Components/Pages/AboutPage';
 import ServicesPage from './Components/Pages/ServicesPage';
 import PortfolioPage from './Components/Pages/PortfolioPage';
 import ContactPage from './Components/Pages/ContactPage';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 const navigations = [
     { text: 'About', path: '/about' },
@@ -17,6 +20,7 @@ const navigations = [
 function App() {
   return (
     <>
+      <ScrollClass />
         <Router>
             <Navbar navigations={navigations} />
             <Routes>
