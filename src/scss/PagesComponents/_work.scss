@@ -47,7 +47,8 @@
                         position: absolute;
                         width: 100%;
                         height: 100%;
-                        background: linear-gradient(45deg, #3a3c47 0%, #6b7077 100%);
+                        background: linear-gradient(to right, rgba(85, 85, 83, 0.1), #aaa9a3);
+                        border-radius: 18px;
                     }
                     a{
                         display: block;
@@ -57,14 +58,34 @@
                         border-bottom-left-radius: 0;
                         border-bottom-right-radius: 0;
                         overflow: hidden;
+                        transition: all 0.3s ease-in;
     
-                        img{
-                            max-width: 576px;
+                        iframe{
+                            max-width: 590px;
                             width: 100%;
-                            height: 320px;
+                            height: 330px;
                             object-fit: cover;
                             aspect-ratio: 16 / 9;
                         }
+                    }
+                    &:hover{
+
+                        a{
+                            transform: scale(1);
+                            transition: all 0.3s ease-in;
+                        }
+                    }
+                }
+                .project-item-1{
+
+                    .underlay{
+                        background: linear-gradient(to right, rgba(85, 85, 83, 0.1), #aaa9a3);
+                    }
+                }
+                .project-item-2{
+
+                    .underlay{
+                        background: linear-gradient(to right, rgba(85, 85, 83, 0.1), #aaa9a3);
                     }
                 }
             }

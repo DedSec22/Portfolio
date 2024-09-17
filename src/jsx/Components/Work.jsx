@@ -10,10 +10,15 @@ const Work = ({ Heading, projects, style }) => {
                         <h1>{Heading}</h1>
                         <div className="projects-group">
                             {projects.map((project, index) => (
-                                <div className="project-item" key={index}>
+                                <div className={`project-item project-item-${index}`} key={index}>
                                     <div className="underlay"></div>
                                     <a href={project.link} target="_blank" rel="noopener noreferrer">
-                                        <img src={project.img} alt="Images" />
+                                        <iframe
+                                            src={project.link}
+                                            frameBorder="0"
+                                            style={{ width: '100%', height: '300px', border: 'none' }}
+                                            allowFullScreen
+                                        ></iframe>
                                     </a>
                                 </div>
                             ))}

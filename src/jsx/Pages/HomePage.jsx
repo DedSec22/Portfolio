@@ -15,16 +15,13 @@ const posts = ['69'];
 
 const projects = [
   {
-    img: 'https://placehold.co/600x400',
-    link: "https://link-to-project-1.com",
+    link: 'https://www.remotedevs.in/'
   },
   {
-    img: 'https://placehold.co/600x400',
-    link: "https://link-to-project-2.com",
+    link: 'https://link-to-project-1.com'
   },
   {
-    img: 'https://placehold.co/600x400',
-    link: "https://link-to-project-3.com",
+    link: 'https://link-to-project-2.com'
   }
 ];
 
