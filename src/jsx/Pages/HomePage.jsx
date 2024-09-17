@@ -17,17 +17,14 @@ const projects = [
   {
     img: 'https://placehold.co/600x400',
     link: "https://link-to-project-1.com",
-    style: 'background: linear-gradient(45deg, #3a3c47 0%, #6b7077 100%);'
   },
   {
     img: 'https://placehold.co/600x400',
     link: "https://link-to-project-2.com",
-    style: 'background: linear-gradient(45deg, #3a3c47 0%, #6b7077 100%);'
   },
   {
     img: 'https://placehold.co/600x400',
     link: "https://link-to-project-3.com",
-    style: 'background: linear-gradient(45deg, #3a3c47 0%, #6b7077 100%);'
   }
 ];
 

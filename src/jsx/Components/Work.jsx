@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Work = ({ Heading, projects }) => {
+const Work = ({ Heading, projects, style }) => {
 
     return (
         <>
@@ -11,7 +11,7 @@ const Work = ({ Heading, projects }) => {
                         <div className="projects-group">
                             {projects.map((project, index) => (
                                 <div className="project-item" key={index}>
-                                    <div className="underlay" style={project.style}></div>
+                                    <div className="underlay"></div>
                                     <a href={project.link} target="_blank" rel="noopener noreferrer">
                                         <img src={project.img} alt="Images" />
                                     </a>
