@@ -1,0 +1,70 @@
+.footer{
+    margin: 0 10px;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+
+    &:hover{
+        background-color: rgba(85,85,83,.05);
+        transition: all 0.3s ease;
+    }
+    .footer-inner{
+
+        .container-fluid{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 60px 0;
+
+            .footer-nav{
+                width: 100%;
+
+                .navbar{
+                    display: block;
+
+                    .navbar-nav{
+                        justify-content: center;
+                        flex-direction: row;
+                        gap: 8px;
+
+                        .nav-item{
+                            max-width: 160px;
+                            width: 100%;
+                            padding: 20px;
+                            border: 1px solid #dddcd5;
+                            background-color: transparent;
+                            border-radius: 18px;
+                            text-decoration: none;
+                            transition: all 0.3s ease-in;
+
+                            img{
+                                max-width: 60px;
+                            }
+                            .nav-link{
+                                padding: 10px 0 0;
+                                transition: all 0.3s ease-in;
+                            }
+                            &:hover{
+                                background-color: #32322e;
+                                transition: all 0.3s ease-in;
+
+                                .nav-link{
+                                    color: #dddcda;
+                                    transition: all 0.3s ease-in;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .title{
+                font-size: 14px;
+                font-weight: 100;
+                font-family: "Roboto", sans-serif;
+                color: #aaa9a3;
+                user-select: none;
+            }
+        }
+    }
+}

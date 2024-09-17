@@ -1,0 +1,66 @@
+.sec-hero{
+    margin: 0 10px;
+    border-radius: 18px;
+    transition: all 0.3s ease;
+
+    &:hover{
+        background-color: rgba(85,85,83,.05);
+        transition: all 0.3s ease;
+    }
+    .sec-hero-inner{
+        height: calc(100vh - 100px);
+        height: 600px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 20px 20px 100px;
+    
+        .container-fluid{
+            max-width: 1522px;
+
+            .intro-text{
+                font-family: "Roboto", sans-serif;
+                max-width: 1064px;
+                width: 100%;
+
+                span{
+                    letter-spacing: -1px;
+                    line-height: 48px;
+                    font-size: 40px;
+                    font-weight: 100;
+                    color: #aaa9a3;
+                }
+                h2{
+                    letter-spacing: 1px;
+                    line-height: 40px;
+                    font-size: 30px;
+                    font-weight: 100;
+                    color: black;
+                    margin: 10px 0 20px;
+
+                    a{
+                        color: #32322e;
+                        opacity: 0.6;
+                        text-decoration: none;
+                        transition: all 0.3s ease;
+
+                        &:hover{
+                            opacity: 0.6;
+                            transition: all 0.3s ease;
+                        }
+                    }
+                }
+            }
+            .btn{
+                font-size: 16px;
+                text-transform: uppercase;
+                background-color: #dddcda;
+
+                &:hover{
+                    color: #dddcda;
+                    background-color: #32322e;
+                }
+            }
+        }
+    }
+}

@@ -3,18 +3,18 @@ header{
     top: 0;
     width: 100%;
     background-color: transparent;
-    background-color: rgba(255, 255, 255);
+    background-color: rgba(233,233,233,.94);
     transition: all 0.3s ease-in;
 
-    .container{
+    .container-fluid{
 
         .navbar{
             width: 100%;
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-start;
             flex-wrap: nowrap;
-            padding: 10px 20px;
-            transition: all 0.3s ease-in;
+            padding: 10px 0;
+            transition: all 0.3s linear;
 
             .logo{
                 display: block;
@@ -34,6 +34,16 @@ header{
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
+                        animation: RotateAnimation 10s linear infinite;
+                    }
+                }
+                &:hover{
+
+                    .navbar-brand{
+
+                        img{
+                            animation: RotateAnimationHover 10s linear infinite;
+                        }
                     }
                 }
             }
@@ -42,35 +52,41 @@ header{
                 flex-direction: row;
                 gap: 22px;
                 width: fit-content;
+                margin-left: auto;
                 transition: all 0.3s ease-in;
     
                 .nav-item{
 
                     .nav-link{
-                        font-size: 20px;
-                        color: #03346E;
+                        font-size: 16px;
+                        color: #555553;
+                        font-weight: 500;
                         text-transform: uppercase;
+                        opacity: .65;
                         transition: all 0.3s ease-in;
 
                         &:hover{
-                            color: #6EACDA;
+                            opacity: 1;
                         }
                     }
                 }
             }
+            .btn{
+                font-weight: 400;
+                text-transform: uppercase;
+                margin-left: 22px;
+            }
         }
     }
 }
-
 .scrolled .header-navbar{
-    box-shadow: 0px 0px 5px 1px #0ff;
     transition: all 0.3s ease-in;
 
-    .container{
+    .container-fluid{
 
         .navbar{
-            padding: 0px 20px;
-            transition: all 0.3s ease-in;
+            padding: 0px 0;
+            transition: all 0.3s linear;
 
             .logo{
                 max-width: 40px;

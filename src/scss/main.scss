@@ -1,10 +1,33 @@
+// BOOTSTRAP
 @import 'vendor/bootstrap/scss/bootstrap';
 
-// FONTS
-@import 'components/_WebFonts.scss';
+////////////////////////////////////////////
+////////////// COMPONENTS
+////////////////////////////////////////////
+@import 'components/animations';
+@import 'components/buttons';
+@import 'components/WebFonts';
 
 // HEADER
 @import 'components/Header';
+// FOOTER
+@import 'components/footer';
+
+
+////////////////////////////////////////////
+////////////// PAGES COMPONENTS
+////////////////////////////////////////////
+// HERO BANNER
+@import 'PagesComponents/hero';
+// SOCIALS
+@import 'PagesComponents/socials';
+
+
+
+
+
+
+
 
 // CUSTOM CSS
-@import 'components/custom';
+@import './custom';

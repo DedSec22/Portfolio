@@ -1,0 +1,19 @@
+@keyframes RotateAnimation {
+    0% {
+      transform: rotate(-200deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+@keyframes RotateAnimationHover {
+  0% {
+    transform: rotate(0deg);
+  }
+  4% {
+    transform: rotate(-200deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
