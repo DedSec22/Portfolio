@@ -5,7 +5,7 @@ const Socials = (prop) => {
     const { socialTitle, socialUsername, URL, posts } = prop;
     return (
         <>
-            <div className="socials">
+            <div className="socials" data-aos="fade-up">
                 <div className="socials-inner">
                     <div className="container-fluid">
                         <div className="left-titles">
@@ -14,8 +14,8 @@ const Socials = (prop) => {
                         </div>
                         <div className="right-images">
                             {URL.map((url, index) => (
-                                <a href={`https://instagram.com/${socialUsername}`} className='right-images-link' target='_blank' rel="noopener noreferrer">
-                                    <img key={index} src={url} alt={`Instagram post ${index + 1}`} />
+                                <a href={`https://instagram.com/${socialUsername}`} key={index} className='right-images-link' target='_blank' rel="noopener noreferrer">
+                                    <img key={index} src={url} alt='InstagramPost' />
                                 </a>
                             ))}
                         </div>

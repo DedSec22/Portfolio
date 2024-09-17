@@ -6,6 +6,38 @@
     &:hover{
         background-color: rgba(85,85,83,.05);
         transition: all 0.3s ease;
+        
+
+        .socials-inner{
+
+            .container-fluid{
+
+                .right-images{
+
+                    .right-images-link:nth-child(1){
+    
+                        img{
+                            transform: translateY(-4px);
+                            transition-delay: 0s;
+                        }
+                    }
+                    .right-images-link:nth-child(2){
+
+                        img{
+                            transform: translateY(-4px);
+                            transition-delay: 0.3s;
+                        }
+                    }
+                    .right-images-link:nth-child(3){
+
+                        img{
+                            transform: translateY(-4px);
+                            transition-delay: 0.6s;
+                        }
+                    }
+                }
+            }
+        }
     }
     .socials-inner{
 
@@ -67,13 +99,28 @@
                         height: calc(100% + 5px);
                         object-fit: cover;
                         transition: all 0.3s ease;
+                        transition-delay: 0s !important;
                     }
-                    &:hover{
+                }
+                .right-images-link:nth-child(1):hover{
+    
+                    img{
+                        transform: translateY(-8px) !important;
+                        transition-delay: 0s !important;
+                    }
+                }
+                .right-images-link:nth-child(2):hover{
 
-                        img{
-                            transform: translateY(-4px);
-                            transition: all 0.3s ease-in;
-                        }
+                    img{
+                        transform: translateY(-8px) !important;
+                        transition-delay: 0s !important;
+                    }
+                }
+                .right-images-link:nth-child(3):hover{
+
+                    img{
+                        transform: translateY(-8px) !important;
+                        transition-delay: 0s !important;
                     }
                 }
             }
