@@ -1,12 +1,15 @@
 {
-  "homepage": "https://dedsec22.github.io/Portfolio",
+  "homepage": "https://DedSec22.github.io/Portfolio",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deplay": "gh-pages -d build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
